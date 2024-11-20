@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <!-- Importar Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Importar iconos Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><p id="marca">LE <img id="mostacho" class="card-img-top" src="Imagenes/mostacho.png" alt="Card image"> BANDIT</p></a>
+
+          <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="bi bi-house"></i> Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-tag"></i> Más vendidos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#tienda"><i class="bi bi-bag"></i> Tienda</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br><br><br><br>
+    <h2 id="mas vendidos">Productos más vendidos</h2><br>
+    <div class="container">
+        <div id="testimonialCarousel" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card shadow-sm rounded-3 p-2">
+                        <div class="card-body">
+                            <div class="quotes" style="text-align: center; width: auto; height: auto;">
+                                <img class="quote-image" src="imagenes/imagen1.webp" alt="Card image">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="producto" data-index="nombreproducto1">Producto 1</h4>
+                                <p class="relleno" data-index="relleno1">Relleno</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton1">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3 p-2">
+                        <div class="card-body">
+                            <div class="quotes" style="text-align: center; width: auto; height: auto;">
+                                <img class="quote-image" src="imagenes/imagen2.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="producto" data-index="nombreproducto2">Producto 2</h4>
+                                <p class="relleno" data-index="relleno2">Relleno</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton2">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3 p-2">
+                        <div class="card-body">
+                            <div class="quotes" style="text-align: center; width: auto; height: auto;">
+                                <img class="quote-image" src="imagenes/imagen3.webp" alt="Card image">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="producto" data-index="nombreproducto3">Producto 3</h4>
+                                <p class="relleno" data-index="relleno3">Relleno</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton3">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3 p-2">
+                        <div class="card-body">
+                            <div class="quotes" style="text-align: center; width: auto; height: auto;">
+                                <img class="quote-image" src="imagenes/imagen4.png" alt="Card image">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="producto" data-index="nombreproducto4">Producto 4</h4>
+                                <p class="relleno" data-index="relleno4">Relleno</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton4">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card shadow-sm rounded-3 p-2">
+                        <div class="card-body">
+                            <div class="quotes" style="text-align: center; width: auto; height: auto;">
+                                <img class="quote-image" src="imagenes/imagen5.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body text-center">
+                                <h4 class="producto" data-index="nombreproducto5">Producto 5</h4>
+                                <p class="relleno" data-index="relleno5">Relleno</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton5">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div><a name="tienda"></a><br><br><br><br><br><br>
+    <h2 id="productos">Todos los productos</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen1.webp" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto1">Producto 1</h4>
+                    <p class="relleno" data-index="relleno1">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton1">Ver más</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen2.jpg" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto2">Producto 2</h4>
+                    <p class="relleno" data-index="relleno2">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton2">Ver más</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen3.webp" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto3">Producto 3</h4>
+                    <p class="relleno" data-index="relleno3">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton3">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen4.png" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto4">Producto 4</h4>
+                    <p class="relleno" data-index="relleno4">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton4">Ver más</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen5.jpg" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto5">Producto 5</h4>
+                    <p class="relleno" data-index="relleno5">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton5">Ver más</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen6.webp" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto6">Producto 6</h4>
+                    <p class="relleno" data-index="relleno6">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton6">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen7.webp" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto7">Producto 7</h4>
+                    <p class="relleno" data-index="relleno7">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton7">Ver más</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen8.jpg" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto8">Producto 8</h4>
+                    <p class="relleno" data-index="relleno8">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton8">Ver más</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen9.jpg" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto9">Producto 9</h4>
+                    <p class="relleno" data-index="relleno9">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton9">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen10.webp" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto10">Producto 10</h4>
+                    <p class="relleno" data-index="relleno10">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton10">Ver más</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="imagenes/imagen11.webp" alt="Card image">
+                <div class="card-body text-center">
+                    <h4 class="producto" data-index="nombreproducto11">Producto 11</h4>
+                    <p class="relleno" data-index="relleno11">Relleno</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" data-index="boton11">Ver más</button>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div id="final">
+        <h3>Contactanos también en</h3>
+        <p><i class="bi bi-telephone"> +51 999 999 999</i></i> &nbsp;&nbsp; <a style="color: white;" href="https://www.instagram.com/lebandit.pe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"> lebandit.pe</a></i></i> &nbsp;&nbsp; <i class="bi bi-whatsapp"> +51 999 999 999</i></p>
+        <div class="mapouter"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.1232141212677!2d-79.83386962524452!3d-6.754825393241727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904ceecb60d7fab3%3A0xd5d6bc792a0e18e8!2sRichard%20Gordon%20299%2C%20Jos%C3%A9%20Leonardo%20Ortiz%2014003!5e0!3m2!1ses-419!2spe!4v1729731488995!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><a href="https://www.timertimer.net"></a><br></div></div>
+        <p style="font-size: 60%;">Diseñado por un grupo de estudiantes universitatios conformado por Jose De la Torre Ugarte Ibañez, Fernando Castro Zelada, Carlos Bravo Malca, Fabian Arroyo Cusman y Paolo Johnson Chozo</p>
+    </div>
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="nomProduc">Producto</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="productoImagen" src="" alt="Imagen del Producto" width="100%"><br>
+                    <span>Tamaño: </span><span id="tamano"> Tamaño</span><br>
+                    <span>Color: </span><span id="color"> Color</span><br>
+                    <span>Peso: </span><span id="peso"> Peso</span><br>
+                    <span>Categoría: </span><span id="categoria"> Categoría</span><br>
+                    <span>Precio: </span><span id="precio"> Precio</span><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick = "window.open('https://wa.me/51972177098?text=Hola!!!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20productos.%20%F0%9F%98%8E', '_blank')">Adquirir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="proyFinal.js"></script>
+    <script src="datos.js"></script>
+</body>
+</html>
